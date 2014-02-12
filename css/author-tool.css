@@ -1,0 +1,898 @@
+html {
+    font-size: 62.5%;
+    height: 100%;
+    text-size-adjust: 100%;
+}
+
+body {
+    height: 100%;
+    margin: 0;
+    padding: 0;
+}
+
+*,
+*:before,
+*:after {
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+    text-rendering: optimizelegibility;
+    -webkit-font-smoothing: antialiased;
+}
+
+[hidden] {
+    display: none;
+}
+
+[contenteditable]:focus{
+    outline: none;
+}
+
+.container{
+    width: 1024px;
+}
+
+.heading{
+    margin-bottom: 23px;
+    border-bottom: 1px solid #ddd;
+}
+
+/* Article Header */
+
+.mobile .article {
+    position: relative;
+}
+
+.mobile .article header {
+    margin: 0 0 2rem;
+}
+
+.mobile .article header nav {
+    border-bottom: 1px dotted #ccc;
+    clear: both;
+    display: block;
+    height: 2.5rem;
+    margin: 0 0 1rem;
+    padding: 0 0 3rem;
+}
+
+.mobile .article header nav a,
+.mobile .article header nav span {
+    color: #111;
+    display: inline-block;
+    font-family: arial, sans-serif;
+    font-size: 1.1rem;
+    font-weight: bold;
+    height: 2rem;
+    line-height: 2.5rem;
+    padding-left: 1.8rem;
+    text-decoration: none;
+    text-transform: uppercase;
+}
+
+.mobile .article header nav a.rubric::before,
+.mobile .article header nav span:last-child::before {
+    color: #999;
+    content: '/';
+    font: 1.6rem Arial, sans-serif;
+    position: relative;
+    left: -.9rem;
+    top: .2rem;
+}
+
+.mobile .article header nav span.exclusive {
+    color: #00bcf1;
+    font-size: 1.25rem;
+    text-transform: capitalize;
+}
+
+.mobile .article header nav span.breaking {
+    color: #ec2c00;
+    font-size: 1.25rem;
+    text-transform: capitalize;
+}
+
+.mobile .article .di-logo {
+    display: block;
+    float: left;
+    font-size: 1.2rem;
+    font-weight: normal;
+    padding-left: 0;
+    text-transform: capitalize;
+    white-space: nowrap;
+}
+
+.mobile .article header h1 {
+    font-family: GeorgiaProCondSemiBold, serif;
+    font-size: 2.6rem;
+    font-weight: normal;
+    line-height: 2.6rem;
+    margin: 0 0 1rem;
+}
+
+.mobile .article header p {
+    color: #333;
+    font-family: Georgia, serif;
+    font-size: 1.6rem;
+    line-height: 1.3rem;
+}
+
+.mobile .article header cite {
+    color: #333;
+    font: normal 1.2rem Arial, sans-serif;
+}
+
+.mobile .article header cite a,
+.mobile .article header cite span {
+    color: #333;
+    font: bold 1.2rem Arial, sans-serif;
+    text-decoration: none;
+    -webkit-transition: color .25s;
+    transition: color .25s;
+}
+
+.mobile .article header cite a:hover {
+    color: #08C;
+}
+
+.mobile .article header cite iframe {
+    margin-left: 1rem;
+    position: relative;
+    top: .4rem;
+}
+
+.mobile .article header time{
+    color: #999;
+    display: block;
+    font: 1.2rem Arial, sans-serif;
+    padding: .6rem 0 1rem;
+}
+
+/* Article Body */
+
+.mobile .article .body {
+    color: #111;
+    font: 1.6rem Arial, sans-serif;
+    line-height: 2.2rem;
+}
+
+.mobile .article .body figure {
+    display: inline-block;
+    position: relative;
+}
+
+.mobile .article .body figure img {
+    max-width: intrinsic;
+    width: 100%;
+}
+
+.mobile .article .body figure.thumb,
+.mobile .article .body figure.square {
+    float: left;
+    margin: .5rem 1.5rem 1rem 2.2rem;
+    max-width: 15.8rem;
+}
+
+.mobile .article .body figure.vertical {
+    float: left;
+    margin: .5rem 1.5rem 1rem 0;
+    max-width: 18rem;
+}
+
+.mobile .article .body figure.horizontal,
+.mobile .article .body figure.video {
+    clear: both;
+    margin: 2.1rem 0;
+}
+
+.mobile .article .body figure.large-horizontal {
+    margin: 1rem 0 4.2rem;
+}
+
+.mobile .article .body figure.large-vertical {
+    margin: 2.1rem 0;
+}
+
+.mobile .article .body figure figcaption {
+    color: #353535;
+    font: 1.1rem Arial, sans-serif;
+    line-height: 1.5rem;
+    margin: .2rem .5rem 0 0;
+    width: 100%;
+}
+
+.mobile .article .body figure.vertical figcaption {
+    margin-left: 2.2rem;
+}
+
+.mobile .article .body figure.horizontal figcaption,
+.mobile .article .body figure.large-horizontal figcaption,
+.mobile .article .body figure.large-vertical figcaption {
+    text-align: center;
+}
+
+.mobile .article .body figure figcaption cite {
+    color: #9C9C9C;
+    display: block;
+    font: 1.1rem Arial, sans-serif;
+    line-height: 1.5rem;
+}
+
+.mobile .article .body h2 {
+    font-size: 1.6rem;
+    font-weight: bold;
+    line-height: 2.2rem;
+    margin: 3rem 0 1rem;
+}
+
+.mobile .article .body p {
+    margin: 0 0 1.5rem;
+}
+
+.mobile .article .body a {
+    color: #1782A9;
+    padding: 0;
+    text-decoration: none;
+}
+
+.mobile .article .body ul {
+    clear: both;
+    margin: 0;
+    padding: 0 0 0 1rem;
+}
+
+.mobile .article .body ul li {
+    list-style: none;
+    margin: 0 0 2rem;
+}
+
+.mobile .article .body ul li:before {
+    color: #999;
+    content: '•';
+    left: 0;
+    position: absolute;
+}
+
+.mobile .article .body ol {
+    counter-reset: list;
+    margin: 3rem 0;
+    padding: 0 0 0 2rem;
+}
+
+.mobile .article .body ol li {
+    display: block;
+    list-style: none;
+    margin: 0 0 2rem;
+    padding: 0;
+}
+
+.mobile .article .body ol li:before {
+    color: #999;
+    content: counter(list);
+    counter-increment: list;
+    font-family: Arial, sans-serif;
+    font-weight: bold;
+    left: 0;
+    position: absolute;
+}
+
+.mobile .article .body blockquote {
+    border-left: 5px solid #eee;
+    margin: 3rem 0;
+    padding: 0 0 0 1.6rem;
+}
+
+/* Article Footer */
+
+.mobile .article footer cite a {
+    background-image: url(../media/source.2x.png);
+    background-position: right center;
+    background-repeat: no-repeat;
+    background-size: .9rem .9rem;
+    color: #888;
+    font: 1rem Arial, sans-serif;
+    margin-right: 1.5rem;
+    padding-right: 1.3rem;
+    text-decoration: none;
+    text-transform: uppercase;
+}
+
+
+
+/* Article Header */
+
+.desktop .article {
+    padding-bottom: 4rem;
+    position: relative;
+}
+
+.desktop .article header {
+    margin-bottom: 2rem;
+}
+
+.desktop .article header nav {
+    clear: both;
+    display: block;
+    height: 2.5rem;
+    margin: 0 0 1rem;
+}
+
+.desktop .article header nav a,
+.desktop .article header nav span {
+    color: #111;
+    display: inline-block;
+    font-family: arial, sans-serif;
+    font-size: 1.1rem;
+    font-weight: bold;
+    height: 2rem;
+    line-height: 2.5rem;
+    padding-left: 1.8rem;
+    text-decoration: none;
+    text-transform: uppercase;
+}
+
+.desktop .article header nav a.rubric::before,
+.desktop .article header nav span:last-child::before {
+    content: '/';
+    color: #999;
+    font: 1.6rem Arial, sans-serif;
+    position: relative;
+    left: -.9rem;
+    top: .2rem;
+}
+
+.desktop .article header nav span.exclusive {
+    color: #00bcf1;
+    font-size: 1.25rem;
+    text-transform: capitalize;
+}
+
+.desktop .article header nav span.breaking {
+    color: #ec2c00;
+    font-size: 1.25rem;
+    text-transform: capitalize;
+}
+
+.desktop .article .di-logo {
+    background-image: url(../media/di-logo.2x.png);
+    background-size: 8.2rem 2rem;
+    color: transparent;
+    display: block;
+    float: left;
+    padding-right: .5rem;
+    height: 2rem;
+    width: 8.2rem;
+}
+
+.desktop .article header h1 {
+    font-family: GeorgiaProCondSemiBold, serif;
+    font-size: 3.2rem;
+    font-weight: normal;
+    line-height: 3.2rem;
+    margin: 0 0 2rem;
+}
+
+.desktop .article header p {
+    color: #333;
+    font-family: Georgia, serif;
+    font-size: 1.7rem;
+    line-height: 1.3rem;
+}
+
+.desktop .article header cite {
+    color: #333;
+    font: normal 1.2rem Arial, sans-serif;
+}
+
+.desktop .article header cite a,
+.desktop .article header cite span {
+    color: #333;
+    font: bold 1.2rem Arial, sans-serif;
+    text-decoration: none;
+    -webkit-transition: color .25s;
+    transition: color .25s;
+}
+
+.desktop .article header cite a:hover {
+    color: #08C;
+}
+
+.desktop .article header cite iframe {
+    position: relative;
+    top: .4rem;
+    margin-left: 1rem;
+}
+
+.desktop .article header time {
+    color: #555;
+    display: block;
+    font: 1.2rem Arial, sans-serif;
+    line-height: 1.6rem;
+    position: absolute;
+    left: -13rem;
+    top: 0rem;
+}
+
+.desktop .article header time span {
+    display: block;
+}
+
+
+/* Article Body */
+
+.desktop .article .body {
+    color: #111;
+    font: 1.6rem Georgia, serif;
+    padding-right: 1rem;
+}
+
+.desktop .article .body figure {
+    display: inline-block;
+    position: relative;
+}
+
+.desktop .article .body figure img {
+    max-width: intrinsic;
+    width: 100%;
+}
+
+.desktop .article .body figure.thumb,
+.desktop .article .body figure.square {
+    float: left;
+    margin: .5rem 1.5rem 1rem 0;
+    max-width: 18.5rem;
+}
+
+.desktop .article .body figure.vertical {
+    float: left;
+    margin: .5rem 1.5rem 1rem 0;
+    max-width: 24.5rem;
+}
+
+.desktop .article .body figure.horizontal,
+.desktop .article .body figure.video {
+    clear: both;
+    margin: 2.1rem 0;
+}
+
+.desktop .article .body figure.large-horizontal {
+    margin: 1rem 0 4.2rem;
+}
+
+.desktop .article .body figure.large-vertical {
+    margin: 2.1rem 0;
+}
+
+.desktop .article .body figure figcaption {
+    color: #353535;
+    font: 1.1rem Arial, sans-serif;
+    line-height: 1.5rem;
+    margin: .2rem .5rem 0 0;
+    width: 100%;
+}
+
+.desktop .article .body figure.horizontal figcaption,
+.desktop .article .body figure.large-horizontal figcaption,
+.desktop .article .body figure.large-vertical figcaption {
+    text-align: center;
+}
+
+.desktop .article .body figure figcaption cite {
+    color: #9C9C9C;
+    font: 1.1rem Arial, sans-serif;
+    line-height: 1.5rem;
+}
+
+.desktop .article .body figure.thumb figcaption cite {
+    display: block;
+}
+
+.desktop .article .body h2 {
+    font-size: 1.5rem;
+    font-weight: bold;
+    line-height: 2rem;
+    margin: 3rem 0 2rem;
+}
+
+.desktop .article .body p {
+    font: 1.6rem Georgia, serif;
+    line-height: 2.4rem;
+    margin: 0 0 1.5rem;
+}
+
+.desktop .article .body a {
+    color: #1782A9;
+    padding: 0;
+    text-decoration: none;
+}
+
+.desktop .article .body ul {
+    clear: both;
+    padding: 0 0 0 1rem;
+}
+
+.desktop .article .body ul li {
+    list-style: none;
+    margin: 0 0 2rem;
+}
+
+.desktop .article .body ul li:before {
+    color: #999;
+    content: '•';
+    left: 0;
+    position: absolute;
+}
+
+.desktop .article .body ol {
+    counter-reset: list;
+    padding: 0 0 0 2rem;
+}
+
+.desktop .article .body ol li {
+    display: block;
+    list-style: none;
+    margin: 0 0 2rem;
+    padding: 0;
+}
+
+.desktop .article .body ol li:before {
+    color: #999;
+    content: counter(list);
+    counter-increment: list;
+    font-family: Arial, sans-serif;
+    font-weight: bold;
+    left: 0;
+    margin-top: .2rem;
+    position: absolute;
+}
+
+.desktop .article .body blockquote {
+    border-left: 5px solid #eee;
+    margin: 0;
+    padding-left: 1.5rem;
+}
+
+/* Article Footer */
+
+.desktop .article footer cite a {
+    background-image: url(../media/source.2x.png);
+    background-size: .9rem .9rem;
+    background-position: right center;
+    background-repeat: no-repeat;
+    color: #888;
+    font: 1rem Arial, sans-serif;
+    margin-right: 1.5rem;
+    padding-right: 1.3rem;
+    text-decoration: none;
+    text-transform: uppercase;
+}
+
+.config{
+    margin-top:50px;
+    margin-bottom:10px;
+    padding: 5px 20px;
+    background-color: #f7f7f7;
+    border-bottom: 1px solid #bbb;
+}
+
+.config>.option{
+    margin-top: 10px;
+}
+
+.config>.option>div{
+    display:inline;
+
+}
+
+.config>.option>b{
+    display:inline;
+    margin-bottom: 3px;
+    margin-right: 12px;
+}
+
+.config>.features{
+    margin-top: 10px;
+}
+
+.config>.features>.feature{
+    margin-bottom: 10px;
+}
+
+.article header cite a{font-weight:bold;}
+.article header cite a:after,
+.article header cite a:before{
+    font-weight:normal;
+}
+.article header cite a:after{content: ", ";}
+.article header cite a:only-child:after{content: "" !important;}
+.article header cite a:only-child:before{content: "By " !important;}
+.article header cite a:last-child:before{content: " and ";}
+.article header cite a:last-child:after{content: "";}
+.article header cite a:first-child:before{content: "By ";}
+.article header cite a:hover:before,
+.article header cite a:hover:after{text-decoration: none;color: #333}
+
+
+.pocket{
+    position: absolute;
+    width: 102%;
+    border-top: 2px solid darkgrey;
+    margin-left: -2%;
+    display: none;
+}
+
+.pocket button{
+    position: absolute;
+    margin: -11px -10px;
+    padding: 1px 3px 0px 4px;
+    border-radius: 30px;
+    color: darkgray;
+    font-size: 12px;
+}
+
+.pocket a{
+    color: #68aafa;
+}
+
+.pocket a:hover{
+    text-decoration: none;
+    color: #3b96e4;
+}
+
+.pocket ul{
+    padding: 0;
+    margin: 0;
+}
+
+.pocket li{
+    text-decoration: none;
+    width: 64px;
+    height: 64px;
+    list-style: none;
+    margin: 8px;
+    padding: 0;
+    float: left;
+    text-align: center;
+}
+
+.pocket .icon{
+    display: block;
+    font-size: 3em;
+}
+
+
+.style-bar{
+    margin: -40px -20px;
+    z-index: 10;
+    float: left;
+    position: absolute;
+    background-color: black;
+    background-image: linear-gradient(to bottom, #444745 0%, #221D21 100%);
+    padding: 0;
+    border-radius: 3px;
+    box-shadow: grey 0px 2px 5px;
+    border: black solid 1px;
+    text-decoration: none !important;
+    display: none;
+}
+
+.btn-toolbar > .btn-group + .btn-group {
+    margin-left: 0px;
+    border-left: #444745 1px solid;
+}
+
+.style-bar > .btn-group > .btn{
+    font-size: 12px;
+    padding: 4px 9px;
+}
+
+.style-bar > .btn-group > .btn-link{
+    color: #ffffff;
+}
+
+.style-bar > .btn-group > .btn-link:hover{
+    color: #d3d3d3;
+    text-decoration: none;
+}
+
+.style-bar > .btn-group > .btn-link:focus{
+    color: darkgray;
+    text-decoration: none;
+}
+
+.style-bar > .btn-group > .active{
+    color: darkgray;
+    text-decoration: none;
+}
+
+.title-options{
+    padding: 15px;
+    margin-bottom: 12px;
+    box-shadow: 0px 0px 5px grey;
+    border-radius: 3px;
+    background: rgb(252, 252, 252);
+    position: absolute;
+    z-index: 1;
+    width: 100%;
+}
+
+.title-options label{
+    font-size: 13px;
+}
+
+.bottom{
+    bottom: inherit;
+}
+
+.module{
+    padding: 5px 0;
+}
+
+.desktop .related-stories {
+    border-bottom: 1px solid #f1f1f1;
+    margin-bottom: 2.5rem;
+    padding-bottom: 1.5rem;
+    position: relative;
+}
+
+.desktop .related-stories h2 {
+    background-color: #fff;
+    color: #333;
+    font: italic bold 1.3rem Georgia, serif;
+    line-height: 1.1;
+    padding-right: .8rem;
+    position: absolute;
+    top: -2.7rem;
+}
+
+.desktop .related-stories a { background-image: url(//placehold.it/122x82); }
+
+.desktop .related-stories a {
+    background-position: .2rem 1.5rem;
+    background-repeat: no-repeat;
+    background-size: 10.7rem auto;
+    border-top: 1px solid #f1f1f1;
+    color: #222;
+    display: block;
+    font: 1.9rem GeorgiaProCondSemiBold, serif;
+    line-height: 1.1;
+    margin: 1.5rem 0 0;
+    min-height: 8.7rem;
+    padding: 1.5rem 0 0;
+    text-decoration: none;
+    text-transform: capitalize;
+}
+
+.desktop .related-stories a:first-child {
+    padding: 0;
+}
+
+.desktop .related-stories a:hover {
+    color: #444;
+    -webkit-transition: color .2s;
+    transition: color .2s;
+}
+
+.desktop .related-stories a p {
+    clear: both;
+    color: #555;
+    display: block;
+    font: normal 1.4rem Georgia, serif;
+    margin: .3rem 0 0;
+}
+
+.desktop .related-stories a.img {
+    padding-left: 12rem;
+}
+
+.desktop .related-stories button{
+    position: absolute;
+    margin: 55px -25px;
+    padding: 2px 4px 1px 4px;
+    border-radius: 30px;
+    color: darkgray;
+    font-size: 11px;
+}
+.desktop .related-stories button:first-of-type{
+    margin: 40px -25px;
+}
+
+.mobile .related-stories{border-bottom:1px solid #f1f1f1;padding-bottom:1.5rem;position:relative;}
+.mobile .related-stories h2{background-color:#fff;color:#333;font:italic bold 1.5rem Georgia,serif;line-height:1.1;padding-right:.8rem;position:absolute;top:-2.1rem;}
+.mobile .related-stories a{background-position:.2rem 1.5rem;background-repeat:no-repeat;background-size:6.3rem 6.3rem;border-top:1px solid #f1f1f1;color:#222;display:block;font:bold 1.6rem Arial,sans-serif;line-height:1.1;margin:1.5rem 0 0;min-height:7.8rem;padding:1.5rem 0 0;text-decoration:none;text-transform:capitalize;}
+.mobile .related-stories a:first-child{padding:0;}
+.mobile .related-stories a:hover{color:#444;-webkit-transition:color .2s;transition:color .2s;}
+.mobile .related-stories a p{clear:both;color:#555;display:block;font:normal 1.4rem Georgia,serif;margin:.3rem 0 0;}
+.mobile .related-stories a.img{padding-left:7.7rem;}
+.mobile .related-stories a { background-image: url(//placehold.it/63x63); }
+.tags {
+     display: block;
+     margin-bottom: 4.5rem;
+ }
+
+.tags a {
+    color: #111;
+    display: inline-block;
+    font: 1rem Arial, sans-serif;
+    text-decoration: none;
+    text-transform: uppercase;
+}
+
+.tags a:hover {
+    color: #1782a9;
+}
+
+.tags a::before {
+    color: #808080;
+    content: '|';
+    display: inline-block;
+    font-size: 8px;
+    /* rem not working here? */
+    padding: 0 0.5rem 0;
+    position: relative;
+    top: -.1rem;
+}
+
+.tags a:first-child::before {
+    content: 'MORE:';
+    font-size: 1rem;
+    padding: 0 0.5rem 0 0;
+    top: 0;
+}
+
+.tags a.hide {
+    display: none;
+}
+
+#box{clear:both;margin:0 auto;position:relative;width:102.4rem;}
+#primary,#secondary{float:left;margin-left:13.4rem;margin-top:2rem;width:53.8rem;}
+#primary .share.vertical{left:0;position:absolute;top:26rem;}
+#tertiary{border-left:1px solid #ddd;float:right;margin-top:2rem;padding-left:2.2rem;width:32.3rem;}
+
+
+.dashboard-search, .dashboard-filter {
+    width:250px;
+    padding-right: 15px;
+}
+
+.actions {
+    display: flex;
+}
+
+.quick-settings .control-label{
+    padding-right: 0;
+    padding-left: 0;
+}
+
+.setting-title{
+    margin-top: 5px;
+    margin-bottom: 0;
+    font-size: 18px;
+}
+
+.setting-item{
+    overflow: hidden;
+    position: relative;
+    padding-top: 20px;
+    padding-bottom: 26px;
+    border-bottom: 1px solid #f2f2f0;
+}
+
+.setting-item-info{
+    width: 60%;
+    float: left;
+}
+
+.setting-item-action{
+    position: absolute;
+    right: 0;
+    top: 50%;
+    margin-top: -19px;
+}
+
+.setting-input{
+    width: 340px;
+    border: 0;
+    padding: 0;
+    -webkit-box-shadow: none;
+    box-shadow: none;
+}

@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- Generator: Adobe Illustrator 15.0.0, SVG Export Plug-In . SVG Version: 6.00 Build 0)  -->
+<!DOCTYPE svg PUBLIC "-//W3C//DTD SVG 1.1//EN" "http://www.w3.org/Graphics/SVG/1.1/DTD/svg11.dtd">
+<svg version="1.1" id="Layer_1" xmlns:sketch="http://www.bohemiancoding.com/sketch/ns"
+	 xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" width="100px" height="100px"
+	 viewBox="0 0 100 100" enable-background="new 0 0 100 100" xml:space="preserve">
+<title>Accordian List</title>
+<description>Created with Sketch (http://www.bohemiancoding.com/sketch)</description>
+<g id="Page_1">
+	<g id="Accordian_List">
+		<path id="Rectangle_23" d="M100,0v16.667H75V25h8.334L66.666,50L50,25h8.334v-8.333H0V0H100z M25,58.334V50h-8.333l16.667-25
+			L50,50h-8.333v8.334H100V75H0V58.334H25z M100,83.334V100H0V83.334H100z"/>
+	</g>
+</g>
+</svg>

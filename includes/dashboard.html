@@ -1,0 +1,149 @@
+<!-- Navigation Include -->
+<div ng-controller="navCtrl" ng-include="template.url"></div>
+<div class="container">
+    <div class="col-lg-12">
+        <div class="navbar navbar-default" role="filtering">
+            <form class="navbar-form">
+                <label>Filter </label>
+                <div class="form-group dashboard-filter">
+                    <select class="form-control">
+                        <option>Published</option>
+                        <option ng-model="authors" value="Kevin Roose">Last Edited by me</option>
+                        <option>Scheduled</option>
+                        <option>Date Created</option>
+                    </select>
+                </div>
+                <label>Blog </label>
+                <div class="form-group dashboard-filter">
+                    <select class="form-control">
+                        <option>Daily Intel</option>
+                        <option ng-model="authors" value="Kevin Roose">Vulture</option>
+                        <option>The Cut</option>
+                        <option>Science of Us</option>
+                        <option>Grub Street</option>
+                        <option>All Blogs</option>
+                    </select>
+                </div>
+                <div class="form-group dashboard-search">
+                    <input type="text" class="form-control" placeholder="Search" ng-model="searchText">
+                </div>
+                <button type="submit" class="btn btn-default">Search</button>
+                <a type="button" class="btn btn-success pull-right" href="#newArticle">Create New Entry</a>
+            </form>
+        </div>
+
+        <table class="table table-striped">
+            <thead>
+                <tr>
+                    <th>Blog</th>
+                    <th>Title</th>
+                    <th>Author</th>
+                    <th>Date Created</th>
+                    <th>Status</th>
+                    <th>Action</th>
+                </tr>
+            </thead>
+            <tbody >
+                <tr ng-repeat-start="article in blogs.dailyintelligencer.articles | filter:searchText" >
+                    <td width="85">Daily Intel</td>
+                    <td height="70"><a href="">{{article.shorterHeadline}}</a><br/>
+                    <div class="text-muted">{{article.excerpt}}</div></td>
+                    <td ng-bind="article.authoredBy"></td>
+                    <td>{{article.publishDate}}</td>
+                    <td>Published
+                        <div>
+                            <a href="" data-target="tooltip" tooltip data-trigger="hover"
+                               title="Active: Author Name" id="authorTest" data-placement="top">
+                                <span class="glyphicon glyphicon-user"></span>
+                            </a>
+                        </div>
+                    </td>
+                    <td>
+                        <div class="btn-toolbar actions" role="toolbar">
+                            <button class="btn btn-default" data-toggle="collapse"  data-target="#id{{$index}}">
+                                <span class="glyphicon glyphicon-cog"></span>
+                            </button>
+                            <div class="btn-group">
+                                <button type="button" class="btn btn-default dropdown-toggle" data-toggle="dropdown">
+                                    Actions <span class="caret"></span>
+                                </button>
+                                <ul class="dropdown-menu pull-right" role="menu">
+                                    <li><a href="">Publish</a></li>
+                                    <li><a href="">Schedule</a></li>
+                                    <li><a href="">Share URL</a></li>
+                                    <li class="divider"></li>
+                                    <li ><a href="" class="text-warning">Delete Article</a></li>
+                                </ul>
+                            </div>
+                        </div>
+                    </td>
+                </tr>
+                <tr ng-repeat-end class="collapse" id="id{{$index}}">
+                    <td colspan="6" >
+                        <div class="row quick-settings">
+                            <form class="form-horizontal" role="form">
+                                <div class="col-lg-6" >
+                                    <div class="form-group">
+                                        <label class="col-sm-2 control-label">Headline</label>
+                                        <div class="col-lg-10">
+                                            <textarea class="form-control" type="text" cols="60" rows="2">{{article.entryTitle}}</textarea>
+                                        </div>
+                                    </div>
+                                    <div class="form-group">
+                                        <label class="col-sm-2 control-label">Short Headline</label>
+                                        <div class="col-lg-10">
+                                            <input class="form-control" type="text" value="{{article.shorterHeadline}}">
+                                        </div>
+                                    </div>
+                                    <div class="form-group">
+                                        <label class="col-sm-2 control-label">Excerpt</label>
+                                        <div class="col-lg-10">
+                                            <textarea class="form-control" type="text" cols="60" rows="2">{{article.excerpt}}</textarea>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-lg-6" >
+                                    <div class="form-group">
+                                        <label class="col-sm-2 control-label">Tags</label>
+                                        <div class="col-lg-10">
+                                            <textarea class="form-control" cols="60" rows="2" type="text" ng-bind="article.tags">
+                                            </textarea>
+                                        </div>
+                                    </div>
+                                    <div class="form-group">
+                                        <label class="col-sm-2 control-label">Cross Post</label>
+                                        <div id="cross-post" class="col-lg-10">
+                                            <label class="checkbox-inline" ng-repeat="blog in config.blogs">
+                                                <input type="checkbox" value="{{blog}}" name="cross-post"> {{blog}}
+                                            </label>
+                                        </div>
+                                    </div>
+                                    <div class="form-group">
+                                        <label class="col-sm-2 control-label">Ledes</label>
+                                        <div id="ledes" class="col-lg-10">
+                                            <label class="checkbox-inline" ng-repeat="lede in config.ledes">
+                                                <input type="checkbox" value="{{lede}}" name="ledes"> {{lede}}
+                                            </label>
+                                        </div>
+                                    </div>
+                                    <div class="form-group">
+                                        <label class="col-sm-2 control-label">Magazine iPad Sections</label>
+                                        <div id="ipad-section" class="col-lg-10">
+                                            <label class="radio-inline" ng-repeat="section in config.ipad">
+                                                <input type="radio" value="{{section}}" name="ipad-section"> {{section}}
+                                            </label>
+                                        </div>
+                                    </div>
+                                </div>
+                            </form>
+                            <div class="col-lg-12">
+                                <button class="btn btn-sm btn-success pull-right" data-toggle="collapse" data-target="#id{{$index}}">update</button>
+                                <button class="btn btn-sm btn-link pull-right" data-toggle="collapse" data-target="#id{{$index}}">cancel</button>
+                            </div>
+                        </div>
+                    </td>
+                </tr>
+            </tbody>
+        </table>
+    </div>
+</div>

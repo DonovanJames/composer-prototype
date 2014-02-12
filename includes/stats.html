@@ -1,0 +1,32 @@
+<!-- Navigation Include -->
+<div ng-controller="navCtrl" ng-include="template.url"></div>
+<div class="container">
+    <h1 class="page-header article-title">Stats</h1>
+    <table class="table table-hover">
+        <thead>
+        <tr>
+            <th><h3>Page</h3></th>
+            <th class="sortable-page-header"></th>
+            <th><h3>Readers</h3></th>
+            <th><h3>Engagement</h3></th>
+
+        </tr>
+        </thead>
+        <tbody>
+        <tr ng-repeat="page in authorStats.pages">
+            <td><a href="http://{{page.path}}">
+                <div style="background-color: #d3d3d3; height:64px; width:64px;" class="media-object"></div>
+            </a></td>
+            <td>
+                <h4 class="media-heading">{{page.title}}</h4>
+                <a href="http://{{page.path}}" target="_blank">View Article</a>
+            </td>
+            <td><h4>{{page.stats.people}}</h4></td>
+            <td><h4>{{page.stats.engaged_time.avg}}s</h4></td>
+        </tr>
+        </tbody>
+    </table>
+    <p class="pull-right">
+        <a href="http://www.chartbeat.com/">Visit Chart Beat</a> for more information.
+    </p>
+</div>

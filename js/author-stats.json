@@ -1,0 +1,1444 @@
+{
+-pages: [
+-{
+path: "nymag.com/daily/intelligencer/2013/12/silicon-valley-holiday-parties.html"
+-authors: [
+"kevin roose"
+]
+-sections: [
+"daily intel & news"
+]
+-stats: {
+-engaged_visit: {
+-hist: [
+32
+8
+8
+6
+3
+2
+4
+2
+0
+0
+]
+avg: 2.252
+median: 2
+}
+-engaged_time: {
+-hist: [
+10
+73
+28
+19
+9
+56
+11
+1
+0
+1
+1
+0
+]
+avg: 48.459
+median: 30
+}
+links: 11
+people: 209
+read: 65
+-writing_visit: {
+-hist: [
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+]
+avg: 0
+median: 0
+}
+direct: 0
+visits: 209
+recirc: 24
+subscr: 0
+-platform: {
+m: 1
+d: 208
+}
+-platform_engaged: {
+m: 0
+d: 65
+}
+article: 209
+-toprefs: [
+-{
+visitors: 9
+domain: "news.google.com"
+}
+-{
+visitors: 8
+domain: "t.co"
+}
+-{
+visitors: 4
+domain: "facebook.com"
+}
+-{
+visitors: 4
+domain: "digg.com"
+}
+]
+search: 1
+crowd: 0
+-domload: {
+-hist: [
+0
+0
+12
+31
+32
+82
+18
+8
+5
+13
+0
+]
+avg: 15093.292
+median: 7000
+}
+-visit: {
+-hist: [
+41
+22
+21
+13
+7
+15
+15
+7
+16
+52
+]
+avg: 23.203
+median: 6
+}
+write: 0
+num_refs: 7
+idle: 144
+internal: 160
+social: 37
+new: 26
+-scroll: {
+-hist: [
+110
+25
+10
+15
+15
+27
+24
+17
+2
+0
+]
+avg: 2.302
+median: 1
+}
+}
+title: "Silicon Valley Holiday Parties -- Daily Intelligencer"
+}
+-{
+path: "nymag.com/daily/intelligencer/2013/12/uber-might-be-more-valuable-than-facebook.html"
+-authors: [
+"kevin roose"
+]
+-sections: [
+"daily intel & news"
+]
+-stats: {
+-engaged_visit: {
+-hist: [
+2
+1
+0
+2
+2
+0
+1
+0
+0
+0
+]
+avg: 3.128
+median: 4
+}
+-engaged_time: {
+-hist: [
+0
+27
+8
+10
+2
+10
+3
+3
+2
+1
+0
+0
+]
+avg: 54
+median: 30
+}
+links: 8
+people: 66
+read: 8
+-writing_visit: {
+-hist: [
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+]
+avg: 0
+median: 0
+}
+direct: 0
+visits: 66
+recirc: 0
+subscr: 0
+-platform: {
+m: 3
+d: 63
+}
+-platform_engaged: {
+m: 2
+d: 6
+}
+article: 66
+-toprefs: [
+-{
+visitors: 6
+domain: "facebook.com"
+}
+-{
+visitors: 4
+domain: "t.co"
+}
+-{
+visitors: 3
+domain: "dailymail.co.uk"
+}
+-{
+visitors: 2
+domain: "linkedin.com"
+}
+]
+search: 1
+crowd: 0
+-domload: {
+-hist: [
+0
+1
+1
+9
+5
+32
+11
+4
+3
+7
+0
+]
+avg: 14272.152
+median: 9000
+}
+-visit: {
+-hist: [
+2
+3
+1
+4
+2
+0
+11
+1
+10
+32
+]
+avg: 40.53
+median: 30
+}
+write: 0
+num_refs: 11
+idle: 58
+internal: 5
+social: 52
+new: 44
+-scroll: {
+-hist: [
+40
+33
+14
+4
+3
+5
+3
+1
+0
+0
+]
+avg: 1.311
+median: 1
+}
+}
+title: "Uber Might Be More Valuable Than Facebook -- Daily Intelligencer"
+}
+-{
+path: "nymag.com/daily/intelligencer/2013/12/goldman-sachs-has-entered-the-iphone-age.html"
+-authors: [
+"kevin roose"
+]
+-sections: [
+"daily intel & news"
+]
+-stats: {
+-engaged_visit: {
+-hist: [
+4
+0
+1
+0
+0
+0
+0
+0
+3
+0
+]
+avg: 7.388
+median: 3
+}
+-engaged_time: {
+-hist: [
+1
+21
+7
+4
+11
+11
+4
+0
+0
+2
+1
+1
+]
+avg: 85.921
+median: 45
+}
+links: 2
+people: 63
+read: 7
+-writing_visit: {
+-hist: [
+0
+0
+0
+0
+0
+0
+0
+0
+1
+0
+]
+avg: 16.5
+median: 30
+}
+direct: 0
+visits: 63
+recirc: 6
+subscr: 0
+-platform: {
+m: 0
+d: 63
+}
+-platform_engaged: {
+m: 0
+d: 8
+}
+article: 63
+-toprefs: [
+-{
+visitors: 2
+domain: "t.co"
+}
+-{
+visitors: 1
+domain: "newsletter.media-navigator.com"
+}
+-{
+visitors: 1
+domain: "news.google.com"
+}
+-{
+visitors: 1
+domain: "google.com"
+}
+]
+search: 1
+crowd: 0
+-domload: {
+-hist: [
+0
+2
+8
+8
+9
+20
+7
+1
+2
+7
+0
+]
+avg: 24911.063
+median: 7000
+}
+-visit: {
+-hist: [
+4
+4
+2
+1
+1
+4
+1
+4
+8
+34
+]
+avg: 48.285
+median: 30
+}
+write: 1
+num_refs: 5
+idle: 55
+internal: 25
+social: 35
+new: 33
+-scroll: {
+-hist: [
+32
+48
+41
+25
+7
+2
+1
+1
+1
+0
+]
+avg: 1.671
+median: 1
+}
+}
+title: "Goldman Sachs Has Entered the iPhone Age -- Daily Intelligencer"
+}
+-{
+path: "nymag.com/daily/intelligencer/2013/12/wall-street-unhappy-with-washington.html"
+-authors: [
+"kevin roose"
+]
+-sections: [
+"daily intel & news"
+]
+-stats: {
+-engaged_visit: {
+-hist: [
+1
+0
+0
+0
+0
+0
+0
+0
+0
+0
+]
+avg: 0.5
+median: 1
+}
+-engaged_time: {
+-hist: [
+0
+3
+2
+2
+0
+0
+0
+0
+0
+0
+0
+0
+]
+avg: 20.143
+median: 30
+}
+links: 1
+people: 7
+read: 1
+-writing_visit: {
+-hist: [
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+]
+avg: 0
+median: 0
+}
+direct: 0
+visits: 7
+recirc: 0
+subscr: 0
+-platform: {
+m: 0
+d: 7
+}
+-platform_engaged: {
+m: 0
+d: 1
+}
+article: 7
+-toprefs: [
+-{
+visitors: 1
+domain: "t.co"
+}
+-{
+visitors: 1
+domain: "nystateofpolitics.com"
+}
+]
+search: 0
+crowd: 0
+-domload: {
+-hist: [
+0
+0
+3
+2
+1
+1
+0
+0
+0
+0
+0
+]
+avg: 4744.714
+median: 4000
+}
+-visit: {
+-hist: [
+1
+0
+0
+0
+0
+2
+0
+1
+1
+2
+]
+avg: 30.151
+median: 15
+}
+write: 0
+num_refs: 3
+idle: 6
+internal: 4
+social: 2
+new: 2
+-scroll: {
+-hist: [
+5
+5
+2
+1
+0
+1
+1
+0
+0
+0
+]
+avg: 1.533
+median: 1
+}
+}
+title: "Wall Street Unhappy With Washington -- Daily Intelligencer"
+}
+-{
+path: "nymag.com/daily/intelligencer/2013/12/annoy-your-friends-with-instagrams-directly.html"
+-authors: [
+"kevin roose"
+]
+-sections: [
+"daily intel & news"
+]
+-stats: {
+-engaged_visit: {
+-hist: [
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+]
+avg: 0
+median: 0
+}
+-engaged_time: {
+-hist: [
+0
+2
+0
+0
+1
+0
+1
+0
+0
+0
+0
+0
+]
+avg: 51.75
+median: 60
+}
+links: 0
+people: 4
+read: 0
+-writing_visit: {
+-hist: [
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+]
+avg: 0
+median: 0
+}
+direct: 0
+visits: 4
+recirc: 0
+subscr: 0
+-platform: {
+m: 0
+d: 4
+}
+-platform_engaged: {
+m: 0
+d: 0
+}
+article: 4
+-toprefs: [
+-{
+visitors: 2
+domain: "facebook.com"
+}
+]
+search: 0
+crowd: 0
+-domload: {
+-hist: [
+0
+0
+0
+1
+2
+1
+0
+0
+0
+0
+0
+]
+avg: 5063
+median: 5000
+}
+-visit: {
+-hist: [
+0
+0
+0
+0
+0
+0
+0
+0
+2
+2
+]
+avg: 55.875
+median: 30
+}
+write: 0
+num_refs: 1
+idle: 4
+internal: 2
+social: 2
+new: 1
+-scroll: {
+-hist: [
+3
+2
+1
+0
+0
+1
+0
+0
+0
+0
+]
+avg: 1.286
+median: 1
+}
+}
+title: "Annoy Your Friends With Instagrams Directly -- Daily Intelligencer"
+}
+-{
+path: "nymag.com/daily/intelligencer/2013/12/quizups-growth-secrets.html"
+-authors: [
+"kevin roose"
+]
+-sections: [
+"daily intel & news"
+]
+-stats: {
+-engaged_visit: {
+-hist: [
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+]
+avg: 0
+median: 0
+}
+-engaged_time: {
+-hist: [
+0
+1
+1
+0
+0
+0
+0
+0
+0
+0
+0
+0
+]
+avg: 12.5
+median: 30
+}
+links: 1
+people: 2
+read: 0
+-writing_visit: {
+-hist: [
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+]
+avg: 0
+median: 0
+}
+direct: 0
+visits: 2
+recirc: 1
+subscr: 0
+-platform: {
+m: 0
+d: 2
+}
+-platform_engaged: {
+m: 0
+d: 0
+}
+article: 2
+-toprefs: [
+-{
+visitors: 1
+domain: "google.com"
+}
+]
+search: 0
+crowd: 0
+-domload: {
+-hist: [
+0
+0
+0
+0
+0
+2
+0
+0
+0
+1
+0
+]
+avg: 37290
+median: 30000
+}
+-visit: {
+-hist: [
+0
+0
+0
+0
+0
+0
+0
+0
+0
+2
+]
+avg: 98.935
+median: 30
+}
+write: 0
+num_refs: 2
+idle: 2
+internal: 0
+social: 1
+new: 1
+-scroll: {
+-hist: [
+1
+2
+1
+0
+0
+0
+0
+0
+0
+0
+]
+avg: 1
+median: 1
+}
+}
+title: "QuizUp’s Growth Secrets -- Daily Intelligencer"
+}
+-{
+path: "nymag.com/daily/intelligencer/2013/12/amazon-drones-and-pre-lobbying.html"
+-authors: [
+"kevin roose"
+]
+-sections: [
+"daily intel & news"
+]
+-stats: {
+-engaged_visit: {
+-hist: [
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+]
+avg: 0
+median: 0
+}
+-engaged_time: {
+-hist: [
+0
+0
+0
+0
+0
+0
+1
+0
+1
+0
+0
+0
+]
+avg: 209
+median: 300
+}
+links: 0
+people: 2
+read: 0
+-writing_visit: {
+-hist: [
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+]
+avg: 0
+median: 0
+}
+direct: 0
+visits: 2
+recirc: 0
+subscr: 0
+-platform: {
+m: 0
+d: 2
+}
+-platform_engaged: {
+m: 0
+d: 0
+}
+article: 2
+toprefs: [ ]
+search: 0
+crowd: 0
+-domload: {
+-hist: [
+0
+0
+1
+1
+0
+0
+0
+0
+0
+0
+0
+]
+avg: 2668
+median: 4000
+}
+-visit: {
+-hist: [
+0
+0
+0
+0
+0
+0
+0
+0
+1
+1
+]
+avg: 27.91
+median: 30
+}
+write: 0
+num_refs: 0
+idle: 2
+internal: 2
+social: 0
+new: 2
+-scroll: {
+-hist: [
+1
+1
+0
+0
+0
+0
+1
+0
+0
+0
+]
+avg: 2.333
+median: 1
+}
+}
+title: "Amazon Drones and Pre-Lobbying -- Daily Intelligencer"
+}
+-{
+path: "nymag.com/daily/intelligencer/2013/12/stop-asking-if-the-volcker-rule-will-work.html"
+-authors: [
+"kevin roose"
+]
+-sections: [
+"daily intel & news"
+]
+-stats: {
+-engaged_visit: {
+-hist: [
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+]
+avg: 0
+median: 0
+}
+-engaged_time: {
+-hist: [
+0
+1
+0
+0
+0
+1
+0
+0
+0
+0
+0
+0
+]
+avg: 54
+median: 120
+}
+links: 0
+people: 2
+read: 0
+-writing_visit: {
+-hist: [
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+]
+avg: 0
+median: 0
+}
+direct: 0
+visits: 2
+recirc: 0
+subscr: 0
+-platform: {
+m: 0
+d: 2
+}
+-platform_engaged: {
+m: 0
+d: 0
+}
+article: 2
+-toprefs: [
+-{
+visitors: 1
+domain: "t.co"
+}
+]
+search: 0
+crowd: 0
+-domload: {
+-hist: [
+0
+0
+0
+0
+1
+0
+0
+1
+0
+0
+0
+]
+avg: 12960
+median: 25000
+}
+-visit: {
+-hist: [
+0
+0
+0
+0
+0
+0
+0
+0
+1
+1
+]
+avg: 58.675
+median: 30
+}
+write: 0
+num_refs: 1
+idle: 2
+internal: 1
+social: 1
+new: 0
+-scroll: {
+-hist: [
+1
+1
+0
+1
+1
+1
+0
+0
+0
+0
+]
+avg: 2.6
+median: 3
+}
+}
+title: "Stop Asking If the Volcker Rule Will Work -- Daily Intelligencer"
+}
+-{
+path: "nymag.com/daily/intelligencer/2013/11/twitters-founder-feuds-explained.html"
+-authors: [
+"kevin roose"
+]
+-sections: [
+"daily intel & news"
+]
+-stats: {
+-engaged_visit: {
+-hist: [
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+]
+avg: 0
+median: 0
+}
+-engaged_time: {
+-hist: [
+0
+0
+1
+0
+0
+0
+0
+0
+0
+0
+0
+0
+]
+avg: 23
+median: 30
+}
+links: 0
+people: 1
+read: 0
+-writing_visit: {
+-hist: [
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+]
+avg: 0
+median: 0
+}
+direct: 0
+visits: 1
+recirc: 0
+subscr: 0
+-platform: {
+m: 0
+d: 1
+}
+-platform_engaged: {
+m: 0
+d: 0
+}
+article: 1
+-toprefs: [
+-{
+visitors: 1
+domain: "google.ca"
+}
+]
+search: 1
+crowd: 0
+-domload: {
+-hist: [
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+]
+avg: 14041
+median: 15000
+}
+-visit: {
+-hist: [
+0
+0
+0
+0
+0
+0
+0
+0
+0
+1
+]
+avg: 49.25
+median: 30
+}
+write: 0
+num_refs: 1
+idle: 1
+internal: 0
+social: 0
+new: 1
+-scroll: {
+-hist: [
+0
+1
+1
+0
+0
+0
+0
+0
+0
+0
+]
+avg: 1.5
+median: 2
+}
+}
+title: "Twitter’s Founder Feuds, Explained -- Daily Intelligencer"
+}
+-{
+path: "nymag.com/news/business/wallstreet/ray-dalio-2011-4/index1.html"
+-authors: [
+"kevin roose"
+]
+-sections: [
+"daily intel & news"
+]
+-stats: {
+-engaged_visit: {
+-hist: [
+1
+0
+0
+0
+0
+0
+0
+0
+0
+0
+]
+avg: 1
+median: 1
+}
+-engaged_time: {
+-hist: [
+0
+0
+0
+0
+1
+0
+0
+0
+0
+0
+0
+0
+]
+avg: 58
+median: 60
+}
+links: 0
+people: 1
+read: 1
+-writing_visit: {
+-hist: [
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+]
+avg: 0
+median: 0
+}
+direct: 0
+visits: 1
+recirc: 0
+subscr: 0
+-platform: {
+m: 0
+d: 1
+}
+-platform_engaged: {
+m: 0
+d: 1
+}
+article: 1
+toprefs: [ ]
+search: 0
+crowd: 0
+-domload: {
+-hist: [
+1
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+]
+avg: 0
+median: 1000
+}
+-visit: {
+-hist: [
+1
+0
+0
+0
+0
+0
+0
+0
+0
+0
+]
+avg: 1
+median: 1
+}
+write: 0
+num_refs: 0
+idle: 0
+internal: 1
+social: 0
+new: 1
+-scroll: {
+-hist: [
+0
+0
+1
+1
+1
+0
+0
+0
+0
+0
+]
+avg: 3
+median: 3
+}
+}
+title: "The Billion-Dollar Aphorisms of Hedge Fund Cult Leader Ray Dalio -- New York Magazine"
+}
+]
+}
