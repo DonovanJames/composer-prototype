@@ -1,285 +1,274 @@
-
-<div id="st-container" class="st-container" >
-<nav class="st-menu st-effect-1" id="menu-1">
-    <label class="checkbox-inline">
-        <input type="checkbox"> Top Story
-    </label>
-</nav>
-
-<div class="st-pusher">
-<div class="st-content">
 <!-- Navigation Include -->
 <div ng-controller="navCtrl" ng-include="template.url"></div>
 <div class="container">
-
-<div class="row">
-<div class="config col-lg-12" id="st-trigger-effects" >
-    <button type="button" class="btn btn-default pull-right" data-effect="st-effect-1">Advanced <span class="caret"></span></button>
-        <div class="option">
-            <b>Primary Blog</b>
-            <div id="primary-blog">
-                <label class="radio-inline" ng-repeat="blog in article.config.blogs">
-                    <input type="radio" value="{{blog}}" name="primary-blog"> {{blog}}
-                </label>
+    <div class="row">
+        <div class="config col-lg-12" id="st-trigger-effects" >
+            <button type="button" class="btn btn-default pull-right md-trigger" data-modal="modal-1">Advanced <span class="caret"></span></button>
+            <div class="option">
+                <b>Primary Blog</b>
+                <div id="primary-blog">
+                    <label class="radio-inline" ng-repeat="blog in article.config.blogs">
+                        <input type="radio" value="{{blog}}" name="primary-blog"> {{blog}}
+                    </label>
+                </div>
+            </div>
+            <div class="option">
+                <b>Analytics Category</b>
+                <div id="analytics-category">
+                    <label class="radio-inline" ng-repeat="category in article.config.categories">
+                        <input type="radio" value="{{category}}" name="category"> {{category}}
+                    </label>
+                </div>
+            </div>
+            <div class="option">
+                <b>Cross Post</b>
+                <div id="cross-post ">
+                    <label class="checkbox-inline" ng-repeat="blog in article.config.post">
+                        <input type="checkbox" value="{{blog}}" name="cross-post"> {{blog}}
+                    </label>
+                </div>
+            </div>
+            <div class="option">
+                <b>Article Type</b>
+                <div id="article-type">
+                    <label class="checkbox-inline" ng-repeat="feature in article.config.features">
+                        <input type="checkbox" value="{{feature}}" name="article-type"
+                               data-toggle="collapse" data-target="#{{feature}}">
+                        {{feature}}
+                    </label>
+                </div>
+            </div>
+            <div class="features">
+                <div class="form-group collapse" id="Interview">
+                    <label for="intervieweeName">Interviewee's Name</label>
+                    <input type="text" class="form-control" id="intervieweeName" placeholder="First Last">
+                </div>
+            </div>
+            <div class="features">
+                <div class="form-group collapse" id="Sponsored">
+                    <label for="sponsoredPost">Sponsored Post ID#</label>
+                    <input type="text" class="form-control" id="sponsoredPost" placeholder="24 Character ID#">
+                </div>
+            </div>
+            <div class="features">
+                <div class="form-group collapse" id="Magazine">
+                    <label for="magSection">Magazine Section</label>
+                    <input type="search" class="form-control" id="magSection">
+                    <label for="magIssue">Magazine Issue Date</label>
+                    <input type="date" class="form-control" id="magIssue">
+                    <label for="magPage">Magazine Page #</label>
+                    <input type="number" class="form-control" id="magPage">
+                    <label class="checkbox"><input type="checkbox"> Include in Magazine Index</label>
+                </div>
             </div>
         </div>
-        <div class="option">
-            <b>Analytics Category</b>
-            <div id="analytics-category">
-                <label class="radio-inline" ng-repeat="category in article.config.categories">
-                    <input type="radio" value="{{category}}" name="category"> {{category}}
-                </label>
-            </div>
-        </div>
-        <div class="option">
-            <b>Cross Post</b>
-            <div id="cross-post ">
-                <label class="checkbox-inline" ng-repeat="blog in article.config.post">
-                    <input type="checkbox" value="{{blog}}" name="cross-post"> {{blog}}
-                </label>
-            </div>
-        </div>
-        <div class="option">
-            <b>Article Type</b>
-            <div id="article-type">
-                <label class="checkbox-inline" ng-repeat="feature in article.config.features">
-                    <input type="checkbox" value="{{feature}}" name="article-type"
-                           data-toggle="collapse" data-target="#{{feature}}">
-                    {{feature}}
-                </label>
-            </div>
-        </div>
-        <div class="features">
-            <div class="form-group collapse" id="Interview">
-                <label for="intervieweeName">Interviewee's Name</label>
-                <input type="text" class="form-control" id="intervieweeName" placeholder="First Last">
-            </div>
-        </div>
-        <div class="features">
-            <div class="form-group collapse" id="Sponsored">
-                <label for="sponsoredPost">Sponsored Post ID#</label>
-                <input type="text" class="form-control" id="sponsoredPost" placeholder="24 Character ID#">
-            </div>
-        </div>
-        <div class="features">
-            <div class="form-group collapse" id="Magazine">
-                <label for="magSection">Magazine Section</label>
-                <input type="search" class="form-control" id="magSection">
-                <label for="magIssue">Magazine Issue Date</label>
-                <input type="date" class="form-control" id="magIssue">
-                <label for="magPage">Magazine Page #</label>
-                <input type="number" class="form-control" id="magPage">
-                <label class="checkbox"><input type="checkbox"> Include in Magazine Index</label>
-            </div>
-        </div>
-</div>
-</div>
+    </div>
 </div>
 <div id="box">
 <div class="desktop" id="primary">
 
-    <div class="heading">
-        <span class="pull-right">200 Words</span>
-        <h4>
-            Desktop and Tablet View
-        </h4>
-    </div>
+<div class="heading">
+    <span class="pull-right">200 Words</span>
+    <h4>
+        Desktop and Tablet View
+    </h4>
+</div>
 
-    <article class="article">
-        <header>
-            <nav>
-                <a  class="di-logo">Daily Intelligencer</a>
-                <a class="rubric"  contenteditable="true" ng-model="article.rubric" placeholder="Add Rubric">Add your Rubric</a>
-                <div class="pull-right">
-                    <label class="checkbox-inline">
-                        <input type="checkbox"> Exclusive
-                    </label>
-                    <label class="checkbox-inline">
-                        <input type="checkbox"> Breaking
-                    </label>
+<article class="article">
+    <header>
+        <nav>
+            <a  class="di-logo">Daily Intelligencer</a>
+            <a class="rubric"  contenteditable="true" ng-model="article.rubric" placeholder="Add Rubric">Add your Rubric</a>
+            <div class="pull-right">
+                <label class="checkbox-inline">
+                    <input type="checkbox"> Exclusive
+                </label>
+                <label class="checkbox-inline">
+                    <input type="checkbox"> Breaking
+                </label>
+            </div>
+        </nav>
+
+
+        <time datetime="2013-08-19T16:01">{{article.date}}, <span>{{article.time}}</span>
+            <label class="pull-left" style="margin-top: 5px">
+                <input type="checkbox"> Hide Timestamp
+            </label>
+            <label>
+                <input type="checkbox"> Show Update
+            </label>
+        </time>
+        <h1 data-toggle="collapse" data-target="#titleOptions" contenteditable="true">{{article.headline.0.content}}</h1>
+        <p>{{article.description.1.content}}</p>
+
+        <div id="titleOptions" class="title-options collapse">
+            <form role="form">
+                <div class="form-group" ng-repeat="form in article.headline">
+                    <label for="{{id}}" class=" control-label">{{form.label}}</label>
+                        <textarea ng-model="form.content" class="form-control" id="{{id}}" rows="1"
+                                  placeholder="{{form.placeholder}}"></textarea>
                 </div>
-            </nav>
-
-
-            <time datetime="2013-08-19T16:01">{{article.date}}, <span>{{article.time}}</span>
-                <label class="pull-left" style="margin-top: 5px">
-                    <input type="checkbox"> Hide Timestamp
-                </label>
-                <label>
-                    <input type="checkbox"> Show Update
-                </label>
-            </time>
-            <h1 data-toggle="collapse" data-target="#titleOptions" contenteditable="true">{{article.headline.0.content}}</h1>
-            <p>{{article.description.1.content}}</p>
-
-            <div id="titleOptions" class="title-options collapse">
-                <form class="form-horizontal" role="form">
-                    <div class="form-group" ng-repeat="form in article.headline">
-                        <label for="{{id}}" class="col-sm-3 control-label">{{form.label}}</label>
-                        <div class="col-sm-9">
-                            <textarea ng-model="form.content" class="form-control" id="{{id}}" rows="1"
-                                      placeholder="{{form.placeholder}}"></textarea>
-                        </div>
-                    </div>
-                </form>
-                <form class="form-horizontal" role="form">
-                    <div class="form-group" ng-repeat="form in article.description">
-                        <label for="{{id}}" class="col-sm-3 control-label">{{form.label}}</label>
-                        <div class="col-sm-9">
-                            <textarea ng-model="form.content" class="form-control" id="{{id}}" rows="1"
-                                      placeholder="{{form.placeholder}}"></textarea>
-                        </div>
-                    </div>
-                </form>
-                <form class="form-horizontal" role="form">
-                    <div class="form-group" ng-repeat="url in article.url">
-                        <label for="{{url.id}}" class="col-sm-3 control-label">{{url.label}}</label>
-                        <div class="col-sm-9">
-                            <textarea ng-model="form.content" class="form-control" id="{{url.id}}" rows="1"
-                                      placeholder="{{url.placeholder}}"></textarea>
-                        </div>
-                    </div>
-                </form>
-                <button type="button" class="btn btn-danger" data-toggle="collapse" data-target="#titleOptions">
-                    Hide
-                </button>
-            </div>
-
-            <cite>
-                <a  ng-repeat="authors in article.authors" ng-bind-html="authors.author" contenteditable="true"></a>
-            </cite>
-            </header>
-        <div class="style-bar btn-toolbar" role="toolbar"  id="styleBar">
-            <div class="btn-group">
-                <button type="button" title="Undo" class="btn btn-link" data-tag="bold">
-                    <span class="ci-undo"></span>
-                </button>
-                <button type="button" title="Redo" class="btn btn-link" data-tag="italic">
-                    <span class="ci-redo"></span>
-                </button>
-
-            </div>
-            <div class="btn-group" data-toggle="buttons">
-                <button type="button" title="Bold" class="btn btn-link" data-tag="bold">
-                    <span class="ci-bold"></span>
-                </button>
-                <button type="button" title="Italics" class="btn btn-link" data-tag="italic">
-                    <span class="ci-italic"></span>
-                </button>
-                <button type="button" title="Underline" class="btn btn-link" data-tag="underline">
-                    <span class="ci-underline"></span>
-                </button>
-                <button type="button" title="Strike Through" class="btn btn-link" data-tag="strike">
-                    <span class="ci-strike"></span>
-                </button>
-            </div>
-            <div class="btn-group">
-                <button type="button" title="Create Link" class="btn btn-link" data-tag="link">
-                    <span class="ci-link"></span>
-                </button>
-                <button type="button" title="Create Anchor Link" class="btn btn-link" data-tag="anchor">
-                    <span class="ci-anchor"></span>
-                </button>
-            </div>
-            <div class="btn-group">
-                <button type="button" class="btn btn-link dropdown-toggle" data-toggle="dropdown">
-                    Normal
-                    <span class="caret"></span>
-                </button>
-                <ul class="dropdown-menu">
-                    <li><a >Normal</a></li>
-                    <li><a ><h2>Header 1</h2></a></li>
-                    <li><a ><h3>Header 2</h3></a></li>
-                    <li><a ><h4>Header 3</h4></a></li>
-                </ul>
-            </div>
-            <div class="btn-group">
-                <button type="button" title="Block Quote" class="btn btn-link" data-tag="quote">
-                    <span class="ci-quote-right"></span>
-                </button>
-                <button type="button" title="Ordered List" class="btn btn-link" data-tag="orderedList">
-                    <span class="ci-list-ol"></span>
-                </button>
-                <button type="button" title="Unordered List" class="btn btn-link" data-tag="unorderedList">
-                    <span class="ci-list-ul"></span>
-                </button>
-            </div>
-            <div class="btn-group">
-                <button type="button" title="Insert Em Dash" class="btn btn-link" data-tag="mdash">
-                    <span class="ci-mdash"></span>
-                </button>
-                <button type="button" title="Insert Correction Marker" class="btn btn-link" data-tag="astrisk">
-                    <span class="ci-asterisk"></span>
-                </button>
-                <button type="button" title="Insert Special Charater" class="btn btn-link" data-tag="omega">
-                    <span class="ci-omega"></span>
-                </button>
-            </div>
-            <div class="btn-group">
-                <button type="button" title="Markdown View" class="btn btn-link" data-tag="markdown">
-                    <span  class="ci-markdown"></span>
-                </button>
-            </div>
-        </div>
-        <div class="body" contenteditable="true" required ng-model="article.body" data-default-value="Edit Article">
-        <p><em>Edit Your Article</em></p></div>
-        <div class="pocket">
-            <button type="button" id="addMedia" class="btn btn-default" data-placement="right" data-target="click">
-                <span class="glyphicon glyphicon-plus"></span>
+            </form>
+            <form role="form">
+                <div class="form-group" ng-repeat="form in article.description">
+                    <label for="{{id}}" class=" control-label">{{form.label}}</label>
+                    <textarea ng-model="form.content" class="form-control" id="{{id}}" rows="1"
+                        placeholder="{{form.placeholder}}"></textarea>
+                </div>
+            </form>
+            <form role="form">
+                <div class="form-group" ng-repeat="url in article.url">
+                    <label for="{{url.id}}" class=" control-label">{{url.label}}</label>
+                    <textarea ng-model="form.content" class="form-control" id="{{url.id}}" rows="1"
+                        placeholder="{{url.placeholder}}"></textarea>
+                </div>
+            </form>
+            <button type="button" class="btn btn-danger" data-toggle="collapse" data-target="#titleOptions">
+                Hide
             </button>
-            <div id="pocketHeader" class="hide">
-                <input type="url" class="form-control" placeholder="Autodetect URL Media Input">
-            </div>
-            <div id="pocketBody" class="hide">
-                <ul>
-                    <li class=""><a src="" id="addImage">
-                        <span class="icon ci-image"></span>
-                        <span>Image</span>
-                    </a></li>
-                    <li class=""><a src="" id="addVideo">
-                        <span class="icon ci-facetime-video"></span>
-                        <span>Video</span>
-                    </a></li>
-                    <li class=""><a src="" id="addTwitter">
-                        <span class="icon ci-twitter"></span>
-                        <span>Twitter</span>
-                    </a></li>
-                    <li class=""><a src="" id="addVine">
-                        <span class="icon ci-vimeo"></span>
-                        <span>Vine</span>
-                    </a></li>
-                    <li class=""><a src="" id="addInstagram">
-                        <span class="icon ci-instagram"></span>
-                        <span>Instagram</span>
-                    </a></li>
-                    <li class=""><a src="" id="addEmbed">
-                        <span class="icon ci-embed"></span>
-                        <span>Embed</span>
-                    </a></li>
-                </ul>
-            </div>
         </div>
-        <footer>
-            <cite>
-                <a contenteditable="true" ng-repeat="source in article.sources" required ng-model="sources.source">Enter Source URL</a>
-            </cite>
-        </footer>
-    </article>
-    <article class="related-stories">
-        <h2>Related Stories</h2>
-        <button type="button" id="removeRelated{{$index + 1}}" class="btn btn-default hide" ng-repeat-start="stories in article.related">
-            <span class="glyphicon glyphicon-remove"></span>
+
+        <cite>
+            <a  ng-repeat="authors in article.authors" ng-bind-html="authors.author" contenteditable="true"></a>
+        </cite>
+    </header>
+    <div class="style-bar btn-toolbar" role="toolbar"  id="styleBar">
+        <div class="btn-group">
+            <button type="button" title="Undo" class="btn btn-link" data-tag="bold">
+                <span class="ci-undo"></span>
+            </button>
+            <button type="button" title="Redo" class="btn btn-link" data-tag="italic">
+                <span class="ci-redo"></span>
+            </button>
+
+        </div>
+        <div class="btn-group" data-toggle="buttons">
+            <button type="button" title="Bold" class="btn btn-link" data-tag="bold">
+                <span class="ci-bold"></span>
+            </button>
+            <button type="button" title="Italics" class="btn btn-link" data-tag="italic">
+                <span class="ci-italic"></span>
+            </button>
+            <button type="button" title="Underline" class="btn btn-link" data-tag="underline">
+                <span class="ci-underline"></span>
+            </button>
+            <button type="button" title="Strike Through" class="btn btn-link" data-tag="strike">
+                <span class="ci-strike"></span>
+            </button>
+        </div>
+        <div class="btn-group">
+            <button type="button" class="btn btn-link" id="link" data-tag="link"
+                    data-toggle="popover" data-placement="bottom" data-target="click">
+                <span class="ci-link"></span>
+            </button>
+            <div class="hidden" id="linkPopover">
+                <input type="search" width="250px" class="form-control" id="addLinkForm">
+            </div>
+            <button type="button" title="Create Anchor Link" class="btn btn-link" data-tag="anchor">
+                <span class="ci-anchor"></span>
+            </button>
+        </div>
+        <div class="btn-group">
+            <button type="button" class="btn btn-link dropdown-toggle" data-toggle="dropdown">
+                Normal
+                <span class="caret"></span>
+            </button>
+            <ul class="dropdown-menu">
+                <li><a >Normal</a></li>
+                <li><a ><h2>Header 1</h2></a></li>
+                <li><a ><h3>Header 2</h3></a></li>
+                <li><a ><h4>Header 3</h4></a></li>
+            </ul>
+        </div>
+        <div class="btn-group">
+            <button type="button" title="Block Quote" class="btn btn-link" data-tag="quote">
+                <span class="ci-quote-right"></span>
+            </button>
+            <button type="button" title="Ordered List" class="btn btn-link" data-tag="orderedList">
+                <span class="ci-list-ol"></span>
+            </button>
+            <button type="button" title="Unordered List" class="btn btn-link" data-tag="unorderedList">
+                <span class="ci-list-ul"></span>
+            </button>
+        </div>
+        <div class="btn-group">
+            <button type="button" title="Insert Em Dash" class="btn btn-link" data-tag="mdash">
+                <span class="ci-mdash"></span>
+            </button>
+            <button type="button" title="Insert Correction Marker" class="btn btn-link" data-tag="astrisk">
+                <span class="ci-asterisk"></span>
+            </button>
+            <button type="button" title="Insert Special Charater" class="btn btn-link" data-tag="omega">
+                <span class="ci-omega"></span>
+            </button>
+        </div>
+        <div class="btn-group">
+            <button type="button" title="Markdown View" class="btn btn-link" data-tag="markdown">
+                <span  class="ci-markdown"></span>
+            </button>
+        </div>
+    </div>
+    <div class="pocket">
+        <button type="button" id="addMedia" class="btn btn-default" data-placement="right" data-target="click">
+            <span class="glyphicon glyphicon-plus"></span>
         </button>
-        <a  class="related-stories-{{$index + 1}} img" contenteditable="true" ng-model="stories.story" ng-repeat-end>
+        <div id="pocketHeader" class="hide">
+            <input type="url" class="form-control" placeholder="Autodetect URL Media Input">
+        </div>
+        <div id="pocketBody" class="hide">
+            <ul>
+                <li class=""><a src="" id="addImage">
+                    <span class="icon ci-image"></span>
+                    <span>Image</span>
+                </a></li>
+                <li class=""><a src="" id="addVideo">
+                    <span class="icon ci-facetime-video"></span>
+                    <span>Video</span>
+                </a></li>
+                <li class=""><a src="" id="addTwitter">
+                    <span class="icon ci-twitter"></span>
+                    <span>Twitter</span>
+                </a></li>
+                <li class=""><a src="" id="addVine">
+                    <span class="icon ci-vimeo"></span>
+                    <span>Vine</span>
+                </a></li>
+                <li class=""><a src="" id="addInstagram">
+                    <span class="icon ci-instagram"></span>
+                    <span>Instagram</span>
+                </a></li>
+                <li class=""><a src="" id="addEmbed">
+                    <span class="icon ci-embed"></span>
+                    <span>Embed</span>
+                </a></li>
+            </ul>
+        </div>
+    </div>
+    <div class="jump-text"><span>Jump Text</span></div>
+    <div class="body" contenteditable="true" required ng-model="article.body" data-default-value="Edit Article">
+        <p><em>Edit Your Article</em><span contenteditable="false" draggable="true" class="jump"></span> </p>
+    </div>
+    <footer>
+        <cite>
+            <a contenteditable="true" ng-repeat="source in article.sources" required ng-model="sources.source">Enter Source URL</a>
+        </cite>
+    </footer>
+</article>
+<article class="related-stories">
+    <h2>Related Stories</h2>
+    <button type="button" id="removeRelated{{$index + 1}}" class="btn btn-default hide" ng-repeat-start="stories in article.related">
+        <span class="glyphicon glyphicon-remove"></span>
+    </button>
+    <a  class="related-stories-{{$index + 1}} img" contenteditable="true" ng-model="stories.story" ng-repeat-end>
         Add Related Stories by URL
-        </a>
-    </article>
-    <aside class="module tags" >
+    </a>
+</article>
+<aside class="module tags" >
         <span class="tags" >
             <a  contenteditable="true" ng-repeat="tags in article.tags" required ng-model="tags.tag">add a tag</a>
         </span>
-    </aside>
-    </div>
+</aside>
+</div>
 <div class="mobile" id="tertiary">
     <div div class="heading">
         <h4>
@@ -320,8 +309,5 @@
         </span>
         </aside>
     </div>
-</div>
-</div>
-</div>
 </div>
 </div>
