@@ -7,7 +7,13 @@ module.exports = function(grunt){
 
     grunt.initConfig({
         concat: {
-
+            js: {
+                options: {
+                    separator: ';'
+                },
+                src: [
+                'js/*.js']
+            }
         }
     })
 }

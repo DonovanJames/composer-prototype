@@ -9,8 +9,10 @@
     "dependencies": {
         "angular": "~1.2.10",
         "jquery": "~2.1.0",
+        "jquery-ui": "latest",
         "bootstrap": "~3.0.3",
         "json3": "~3.3.0",
+        "lodash": "latest",
         "angular-resource": "~1.2.10",
         "angular-cookies": "~1.2.10",
         "angular-sanitize": "~1.2.10",
